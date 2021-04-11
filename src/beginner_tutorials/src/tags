@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+chatterCallback	listener.cpp	/^void chatterCallback(const std_msgs::String::ConstPtr& msg)$/;"	f	signature:(const std_msgs::String::ConstPtr& msg)
+chatter_pub	talker.cpp	/^  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);$/;"	l
+count	talker.cpp	/^    ss << "I love yousa's song!" << count;$/;"	l
+count	talker.cpp	/^  int count = 0;$/;"	l
+init	listener.cpp	/^  ros::init(argc, argv, "listener");$/;"	p	class:ros	file:	signature:(argc, argv, Ó)
+init	talker.cpp	/^  ros::init(argc, argv, "talker");$/;"	p	class:ros	file:	signature:(argc, argv, Ó)
+main	listener.cpp	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	talker.cpp	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+msg	talker.cpp	/^    std_msgs::String msg;$/;"	l
+n	listener.cpp	/^  ros::NodeHandle n;$/;"	l
+n	talker.cpp	/^  ros::NodeHandle n;$/;"	l
+publish	talker.cpp	/^    chatter_pub.publish(msg);$/;"	p	file:	signature:(msg)
+ros::init	listener.cpp	/^  ros::init(argc, argv, "listener");$/;"	p	class:ros	file:	signature:(argc, argv, Ó)
+ros::init	talker.cpp	/^  ros::init(argc, argv, "talker");$/;"	p	class:ros	file:	signature:(argc, argv, Ó)
+ros::spin	listener.cpp	/^  ros::spin();$/;"	p	class:ros	file:	signature:()
+ros::spinOnce	talker.cpp	/^    ros::spinOnce();$/;"	p	class:ros	file:	signature:()
+sleep	talker.cpp	/^    loop_rate.sleep();$/;"	p	file:	signature:()
+spin	listener.cpp	/^  ros::spin();$/;"	p	class:ros	file:	signature:()
+spinOnce	talker.cpp	/^    ros::spinOnce();$/;"	p	class:ros	file:	signature:()
+ss	talker.cpp	/^    std::stringstream ss;$/;"	l
+sub	listener.cpp	/^  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);$/;"	l
