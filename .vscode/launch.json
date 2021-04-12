@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/devel/lib/ros_test/talker_test",
+            "program": "${workspaceFolder}/devel/lib/learning_tf/turtle_tf_listener",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

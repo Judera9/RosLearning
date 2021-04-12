@@ -1,4 +1,4 @@
-prefix=/home/guo/catkin_ws/install
+prefix=/usr/local
 
 Name: ros_test
 Description: Description of ros_test

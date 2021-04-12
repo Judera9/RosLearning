@@ -1,2 +1,2 @@
-beginner_tutorials:learning_tf:ros_test
+beginner_tutorials:learning_tf
 -DCATKIN_DEVEL_PREFIX=/home/guo/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/guo/catkin_ws/install -G Unix Makefiles
