@@ -53,26 +53,26 @@ CMAKE_BINARY_DIR = /home/guo/catkin_ws/build
 # Include the progress variables for this target.
 include beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/progress.make
 
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/guo/catkin_ws/devel/include/beginner_tutorials/Num.h
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/guo/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: devel/include/beginner_tutorials/Num.h
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: devel/include/beginner_tutorials/AddTwoInts.h
 
 
-/home/guo/catkin_ws/devel/include/beginner_tutorials/Num.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/guo/catkin_ws/devel/include/beginner_tutorials/Num.h: /home/guo/catkin_ws/src/beginner_tutorials/msg/Num.msg
-/home/guo/catkin_ws/devel/include/beginner_tutorials/Num.h: /opt/ros/melodic/share/gencpp/msg.h.template
+devel/include/beginner_tutorials/Num.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+devel/include/beginner_tutorials/Num.h: /home/guo/catkin_ws/src/beginner_tutorials/msg/Num.msg
+devel/include/beginner_tutorials/Num.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guo/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from beginner_tutorials/Num.msg"
-	cd /home/guo/catkin_ws/src/beginner_tutorials && /home/guo/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/guo/catkin_ws/src/beginner_tutorials/msg/Num.msg -Ibeginner_tutorials:/home/guo/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/guo/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/melodic/share/gencpp/cmake/..
+	cd /home/guo/catkin_ws/src/beginner_tutorials && /home/guo/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/guo/catkin_ws/src/beginner_tutorials/msg/Num.msg -Ibeginner_tutorials:/home/guo/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/guo/catkin_ws/build/devel/include/beginner_tutorials -e /opt/ros/melodic/share/gencpp/cmake/..
 
-/home/guo/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/guo/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /home/guo/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv
-/home/guo/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/melodic/share/gencpp/msg.h.template
-/home/guo/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/melodic/share/gencpp/srv.h.template
+devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+devel/include/beginner_tutorials/AddTwoInts.h: /home/guo/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv
+devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/melodic/share/gencpp/msg.h.template
+devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/melodic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guo/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from beginner_tutorials/AddTwoInts.srv"
-	cd /home/guo/catkin_ws/src/beginner_tutorials && /home/guo/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/guo/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv -Ibeginner_tutorials:/home/guo/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/guo/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/melodic/share/gencpp/cmake/..
+	cd /home/guo/catkin_ws/src/beginner_tutorials && /home/guo/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/guo/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv -Ibeginner_tutorials:/home/guo/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/guo/catkin_ws/build/devel/include/beginner_tutorials -e /opt/ros/melodic/share/gencpp/cmake/..
 
 beginner_tutorials_generate_messages_cpp: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp
-beginner_tutorials_generate_messages_cpp: /home/guo/catkin_ws/devel/include/beginner_tutorials/Num.h
-beginner_tutorials_generate_messages_cpp: /home/guo/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
+beginner_tutorials_generate_messages_cpp: devel/include/beginner_tutorials/Num.h
+beginner_tutorials_generate_messages_cpp: devel/include/beginner_tutorials/AddTwoInts.h
 beginner_tutorials_generate_messages_cpp: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build.make
 
 .PHONY : beginner_tutorials_generate_messages_cpp

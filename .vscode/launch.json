@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/devel/lib/learning_tf/turtle_tf_listener",
+            "program": "${workspaceFolder}/devel/lib/learning_tf/frame_tf_broadcaster",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

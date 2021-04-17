@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/listener.dir/src/listener.cpp.o"
-  "/home/guo/catkin_ws/devel/lib/beginner_tutorials/listener.pdb"
-  "/home/guo/catkin_ws/devel/lib/beginner_tutorials/listener"
+  "../devel/lib/beginner_tutorials/listener.pdb"
+  "../devel/lib/beginner_tutorials/listener"
 )
 
 # Per-language clean rules from dependency scanning.

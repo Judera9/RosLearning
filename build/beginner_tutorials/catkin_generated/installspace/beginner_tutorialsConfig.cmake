@@ -68,13 +68,13 @@ set(beginner_tutorials_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(beginner_tutorials_SOURCE_PREFIX /home/guo/catkin_ws/src/beginner_tutorials)
-  set(beginner_tutorials_DEVEL_PREFIX /home/guo/catkin_ws/devel)
+  set(beginner_tutorials_DEVEL_PREFIX /home/guo/catkin_ws/build/devel)
   set(beginner_tutorials_INSTALL_PREFIX "")
   set(beginner_tutorials_PREFIX ${beginner_tutorials_DEVEL_PREFIX})
 else()
   set(beginner_tutorials_SOURCE_PREFIX "")
   set(beginner_tutorials_DEVEL_PREFIX "")
-  set(beginner_tutorials_INSTALL_PREFIX /home/guo/catkin_ws/install)
+  set(beginner_tutorials_INSTALL_PREFIX /usr/local)
   set(beginner_tutorials_PREFIX ${beginner_tutorials_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/guo/catkin_ws/install/lib;/home/guo/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /usr/local/lib;/home/guo/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${beginner_tutorials_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime")
+set(depends "")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

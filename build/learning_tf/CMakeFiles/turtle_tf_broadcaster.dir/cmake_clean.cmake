@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/turtle_tf_broadcaster.dir/src/turtle_tf_broadcaster.cpp.o"
-  "/home/guo/catkin_ws/devel/lib/learning_tf/turtle_tf_broadcaster.pdb"
-  "/home/guo/catkin_ws/devel/lib/learning_tf/turtle_tf_broadcaster"
+  "../devel/lib/learning_tf/turtle_tf_broadcaster.pdb"
+  "../devel/lib/learning_tf/turtle_tf_broadcaster"
 )
 
 # Per-language clean rules from dependency scanning.

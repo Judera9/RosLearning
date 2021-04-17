@@ -68,13 +68,13 @@ set(learning_tf_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(learning_tf_SOURCE_PREFIX /home/guo/catkin_ws/src/learning_tf)
-  set(learning_tf_DEVEL_PREFIX /home/guo/catkin_ws/devel)
+  set(learning_tf_DEVEL_PREFIX /home/guo/catkin_ws/build/devel)
   set(learning_tf_INSTALL_PREFIX "")
   set(learning_tf_PREFIX ${learning_tf_DEVEL_PREFIX})
 else()
   set(learning_tf_SOURCE_PREFIX "")
   set(learning_tf_DEVEL_PREFIX "")
-  set(learning_tf_INSTALL_PREFIX /home/guo/catkin_ws/install)
+  set(learning_tf_INSTALL_PREFIX /usr/local)
   set(learning_tf_PREFIX ${learning_tf_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/guo/catkin_ws/install/lib;/home/guo/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /usr/local/lib;/home/guo/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(learning_tf_EXPORTED_TARGETS "learning_tf_generate_messages_cpp;learning_tf_generate_messages_eus;learning_tf_generate_messages_lisp;learning_tf_generate_messages_nodejs;learning_tf_generate_messages_py")
+set(learning_tf_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${learning_tf_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND learning_tf_EXPORTED_TARGETS ${${learning_tf_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "learning_tf-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${learning_tf_DIR}/${extra})

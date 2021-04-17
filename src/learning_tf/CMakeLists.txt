@@ -14,7 +14,6 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   turtlesim
 )
-
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -70,10 +69,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs  # Or other packages containing msgs
-)
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs  # Or other packages containing msgs
+# )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -105,10 +104,7 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES learning_tf
-#  CATKIN_DEPENDS roscpp rospy tf turtlesim
-#  DEPENDS system_lib
+  # CATKIN_DEPENDS message_runtimes
 )
 
 ###########
@@ -214,3 +210,6 @@ target_link_libraries(turtle_tf_broadcaster ${catkin_LIBRARIES})
 add_executable(turtle_tf_listener src/turtle_tf_listener.cpp)
 target_link_libraries(turtle_tf_listener ${catkin_LIBRARIES})
 # add_dependencies(turtle_tf_listener ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(frame_tf_broadcaster src/frame_tf_broadcaster.cpp)
+target_link_libraries(frame_tf_broadcaster ${catkin_LIBRARIES})
