@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/guo/catkin_ws/build/devel:$CMAKE_PREFIX_PATH"
+export PATH='/opt/ros/melodic/bin:/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin:/usr/lib/jvm/java-1.11.0-openjdk-amd64//bin:/home/guo/.pyenv/shims:/home/guo/.pyenv/bin:/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin:/usr/lib/jvm/java-1.11.0-openjdk-amd64//bin:/home/guo/.pyenv/shims:/home/guo/.pyenv/bin:/home/guo/.local/bin:/home/guo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/guo/bin:/home/guo/bin'
 export PWD='/home/guo/catkin_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/guo/catkin_ws/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/guo/catkin_ws/src:$ROS_PACKAGE_PATH"

@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/guo/catkin_ws/install
 
 Name: learning_tf
 Description: Description of learning_tf
