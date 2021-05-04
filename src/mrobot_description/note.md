@@ -45,6 +45,31 @@
 ![frame_urdf](frame_urdf.png)
 
 joint_state_publisher是用于调整节点状态的ui，可以控制轮子的转动（除了fixed固定的joint）\
-
 接下来添加碰撞和惯性属性\
 
+```xml
+<link name="base_link">
+    <inertial>
+        <mass value="2" />
+        <origin xyz="0 0 0.0" />
+        <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5" />
+    </inertial>
+    <visual>
+        <origin xyz=" 0 0 0" rpy="0 0 0" />
+        <geometry>
+            <cylinder length="${base_link_length}" radius="${base_link_radius}"/>
+        </geometry>
+        <material name="yellow" />
+    </visual>
+    <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <cylinder length="${base_link_length}" radius="${base_link_radius}"/>
+        </geometry>
+    </collision>
+</link>
+```
+惯性参数的设置主要包含质量和惯性矩阵，规则物体可以通过尺寸和质量等公式计算得到惯性矩阵；``<collision>``标签中的内容和``<visual>``中的内容基本一致，也可以适当简化，减少碰撞的计算量（``<visual>``中的``<material>``标签可以在``<gazebo ref='...'>``中去定义）
+
+## 利用xacro优化urdf
+好复杂。。。晚点看吧
